@@ -1,11 +1,11 @@
 full_name:Gilded Rose Refactoring Kata 
 
 # location where you have your clone
-default_checkout:/Users/emily/training_materials/Refactoring-Katas/GildedRose
+default_checkout:/home/vlad/Job/BitMaster/GildedRose-Refactoring-Kata-Solution
 
 # Settings for the Java version
-executable:com.gildedrose.TexttestFixture
-interpreter:java
+#executable:com.gildedrose.TexttestFixture
+#interpreter:java
 # note you'll also need to update the file environment.gr with your classpath if you keep your classfiles somewhere unusual
 
 # Settings for the Python version
@@ -16,8 +16,8 @@ interpreter:java
 #executable:${TEXTTEST_CHECKOUT}/cpp/GildedRoseTextTests
 
 # Settings for the Ruby version
-#executable:${TEXTTEST_CHECKOUT}/ruby/texttest_fixture.rb
-#interpreter:ruby
+executable:${TEXTTEST_CHECKOUT}/ruby/texttest_fixture.rb
+interpreter:ruby
 
 # Settings for the C# version
 #executable:${TEXTTEST_CHECKOUT}/GildedRose.exe
@@ -28,7 +28,7 @@ interpreter:java
 
 # turn on one of these if you prefer them to notepad or emacs.
 [view_program]
-*:mate
+*:kate
 #*:gedit
 [end]
 
