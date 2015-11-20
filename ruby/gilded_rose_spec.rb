@@ -104,6 +104,24 @@ describe GildedRose do
         expect(items[0].quality).to eq(0)
       end
     end
+
+    context "Conjured" do
+      def build_items
+        [Item.new("Conjured Mana Cake", 10, 24)]
+      end
+       
+      it "descreases twice fast" do
+        items = build_items()
+        gilded_rose = GildedRose.new(items)
+        gilded_rose.update_quality()
+        expect(items[0].quality).to eq(22)
+        8.downto(0) { gilded_rose.update_quality() }
+        expect(items[0].quality).to eq(4)
+        gilded_rose.update_quality()
+        expect(items[0].quality).to eq(0)
+      end
+    end
+
   end
 
 end
