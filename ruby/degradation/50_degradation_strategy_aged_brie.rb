@@ -7,4 +7,8 @@ class DegradationStrategyAgedBrie < DegradationStrategy
 
     [sell_in, quality]
   end
+  
+  register_strategy(self) do |item|
+    item.name == "Aged Brie" ? true : false
+  end
 end
